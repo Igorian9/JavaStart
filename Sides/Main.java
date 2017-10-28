@@ -10,13 +10,13 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 
 		int a;
-		System.out.println("Enter the side a of triangle");
+		System.out.println("Enter the side a of the triangle");
 		a = sc.nextInt();
 		int b;
-		System.out.println("Enter the side b of triangle");
+		System.out.println("Enter the side b of the triangle");
 		b = sc.nextInt();
 		int c;
-		System.out.println("Enter side c of triangle");
+		System.out.println("Enter side c of the triangle");
 		c = sc.nextInt();
 		if (((a + b) > c) && ((a + c) > b) && ((b + c) > a)) {
 			System.out.println("Triangle exist");

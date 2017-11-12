@@ -8,7 +8,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter binary number");
 		String binNum = sc.nextLine();
-		System.out.println(binNum + " -> " + calculateDec(binNum));
+		System.out.println("\"" + binNum + "\"" + " -> " + calculateDec(binNum));
 		sc.close();
 	}
 

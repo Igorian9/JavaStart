@@ -42,12 +42,12 @@ class Triangle {
 
 	public double square() {
 		double p = (this.sideA + this.sideB + this.sideC) / 2;
-		if ((this.sideA > this.sideB + this.sideC) || (this.sideB > this.sideA + this.sideC)
-				|| (this.sideC > this.sideA + this.sideB)) {
+		if ((sideA > sideB + sideC) || (sideB > sideA + sideC)
+				|| (sideC > sideA + sideB)) {
 			System.out.println("Triangle doesn't exist");
 			return 0.0;
 		} else {
-			double s = Math.sqrt(p * (p - this.sideA) * (p - this.sideB) * (p - this.sideC));
+			double s = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
 			return s;
 		}
 	}

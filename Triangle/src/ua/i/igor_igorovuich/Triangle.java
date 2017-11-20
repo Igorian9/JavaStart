@@ -40,13 +40,14 @@ class Triangle {
 		this.sideC = sideC;
 	}
 
-	public double square(double sideA, double sideB, double sideC) {
-		double p = (sideA + sideB + sideC) / 2;
-		if ((sideA > sideB + sideC) || (sideB > sideA + sideC) || (sideC > sideA + sideB)) {
+	public double square() {
+		double p = (this.sideA + this.sideB + this.sideC) / 2;
+		if ((this.sideA > this.sideB + this.sideC) || (this.sideB > this.sideA + this.sideC)
+				|| (this.sideC > this.sideA + this.sideB)) {
 			System.out.println("Triangle doesn't exist");
 			return 0.0;
 		} else {
-			double s = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
+			double s = Math.sqrt(p * (p - this.sideA) * (p - this.sideB) * (p - this.sideC));
 			return s;
 		}
 	}
@@ -54,7 +55,7 @@ class Triangle {
 	@Override
 	public String toString() {
 		return "Triangle [sideA = " + sideA + ", sideB = " + sideB + ", sideC = " + sideC + ", square = "
-				+ square(this.sideA, this.sideB, this.sideC) + "]";
+				+ square() + "]";
 	}
 
 }

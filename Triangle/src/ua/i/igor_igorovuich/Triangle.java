@@ -41,7 +41,7 @@ class Triangle {
 	}
 
 	public double square() {
-		double p = (this.sideA + this.sideB + this.sideC) / 2;
+		double p = (sideA + sideB + sideC) / 2;
 		if ((sideA > sideB + sideC) || (sideB > sideA + sideC)
 				|| (sideC > sideA + sideB)) {
 			System.out.println("Triangle doesn't exist");
